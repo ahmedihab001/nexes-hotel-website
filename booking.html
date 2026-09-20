@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('background hotel and resort page.jpg') no-repeat center center/cover;
+            color: white;
+        }
+        .navbar {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            text-align: center;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            padding: 10px 15px;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 5px;
+        }
+        .content {
+            padding: 30px;
+            text-align: center;
+        }
+        .booking-form {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            width: 320px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+            color: black;
+        }
+        .booking-form input, .booking-form select, .booking-form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .booking-form select {
+            color: gray;
+        }
+        .booking-form select option:first-child {
+            display: none;
+        }
+        .booking-form button {
+            background: red;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .booking-form button:hover {
+            background: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="home page.html">Home</a>
+        <a href="about us.html">About Us</a>
+        <a href="hotel and resorts.html">Hotels & Resorts</a>
+        <a href="holidays page.html">Holidays</a>
+        <a href="booking.html" style="background: red; border-radius: 5px;">Booking</a>
+    </div>
+    
+    <div class="content">
+        <h1>Book Your Stay</h1>
+        <p>Fill in the details below to reserve your stay at one of our luxurious locations.</p>
+        
+        <div class="booking-form">
+            <form action="#" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="destination">Select Destination:</label>
+                <select id="destination" name="destination" required>
+                    <option value="" selected disabled>Choose a destination</option>
+                    <option value="New York">New York</option>
+                    <option value="Maldives">Maldives</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Bali">Bali</option>
+                </select>
+                
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin" required>
+                
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout" required>
+                
+                <button type="submit">Book Now</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
